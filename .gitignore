@@ -1,2 +1,5 @@
 .DS_Store
-code/__pycache__/problem1.cpython-312.pyc
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.idea/

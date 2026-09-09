@@ -1,20 +1,44 @@
-# NLP 2025 Assignments – Vrije Universiteit Amsterdam
+# NLP Assignments -- Group 48
 
-This repository contains all coursework for the *Natural Language Processing* (NLP) course at Vrije Universiteit Amsterdam, Spring 2025.
+Coursework for *Natural Language Processing* at Vrije Universiteit Amsterdam, Spring 2025.
 
-## Contents
-- **Assignment 2: Language Modeling with N-Grams & Word Vectors**
----
+## Overview
 
-## Assignment 2: Language Modeling with N-Grams & Word Vectors
+This repository contains group assignments covering foundational NLP techniques, from statistical language modelling to neural dependency parsing.
 
-This assignment explores core techniques in statistical NLP:
-- **Text Processing & Zipf’s Law** using the Brown Corpus
-- **N-Gram Language Modeling** with additive smoothing and generation
-- **Word Vector Representations** using co-occurrence statistics
-- Optional: **Pointwise Mutual Information (PMI & PPMI)** for modeling statistical dependence
+## Assignment 2: Language Modelling and Word Vectors (`A2/`)
 
-The code for A2.1 is contained in problem1.py, for A2.2 the final code is presented in NLP_A2_final.ipynb and the code for the bonus question is present in pmi.ipynb.
+- **Text processing and Zipf's law** -- frequency analysis on the Brown Corpus, verifying the Zipfian distribution
+- **N-gram language modelling** -- unigram, bigram, and trigram models with additive smoothing; text generation from learned distributions
+- **Word vectors via co-occurrence statistics** -- building word representations from co-occurrence matrices
+- **PMI and PPMI** -- pointwise mutual information for measuring statistical association between words
 
-This assignment was created for the *NLP 2025* course at Vrije Universiteit Amsterdam.
----
+Key files: `code/problem1.py` (text processing), `code/NLP_A2_final.ipynb` (n-grams and generation), `code/pmi.ipynb` (PMI/PPMI analysis).
+
+## Assignment 4: MLP Classifier and Dependency Parsing (`A4/`)
+
+- **MLP text classifier** -- multi-layer perceptron for text classification (`A4_MLP.ipynb`)
+- **Transition-based dependency parsing** -- arc-standard parser with an MLP scoring model, trained and evaluated on CoNLL-format treebanks
+
+Key files: `DepParsing/run.py` (training and evaluation), `DepParsing/parser_model.py` (neural model), `DepParsing/parser_transitions.py` (transition system).
+
+## How to Run
+
+```bash
+pip install jupyter numpy matplotlib torch
+# Assignment 2
+jupyter notebook A2/code/NLP_A2_final.ipynb
+# Assignment 4 -- dependency parser
+cd A4/NLP_2025_A4/DepParsing
+python run.py
+```
+
+## Requirements
+
+- Python 3.10+
+- Jupyter Notebook
+- NumPy, Matplotlib, PyTorch
+
+## Course
+
+Natural Language Processing -- Vrije Universiteit Amsterdam, Spring 2025
